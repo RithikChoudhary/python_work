@@ -81,10 +81,9 @@ execute = {
 }
 
 N = int(input())
-inputs = [input().split() for i in range(
+inputs = [input().split() for i in range(N)]
+
 for line in inputs:
 	instruction, arguments = line[0], line[1:]
 
 	execute[instruction](arguments)
- 
- 
