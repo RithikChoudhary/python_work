@@ -61,3 +61,30 @@ if __name__ == '__main__':
                 fin.pop()
             if key == 'reverse':
                 fin.reverse()
+
+
+
+outputList = []
+execute = {
+	#0 arguments
+	"print"   : lambda arguments : print(outputList),
+	"sort"    : lambda arguments : outputList.sort(),
+	"pop"	  : lambda arguments : outputList.pop(),
+	"reverse" : lambda arguments : outputList.reverse(),
+
+	#1 argument
+	"append"  : lambda arguments : outputList.append(int(arguments[0])),
+	"remove"  : lambda arguments : outputList.remove(int(arguments[0])),
+
+	#2 argument
+	"insert"  : lambda arguments : outputList.insert(int(arguments[0]),int(arguments[1])),
+}
+
+N = int(input())
+inputs = [input().split() for i in range(
+for line in inputs:
+	instruction, arguments = line[0], line[1:]
+
+	execute[instruction](arguments)
+ 
+ 
