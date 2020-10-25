@@ -38,29 +38,29 @@
 
 
 
-if __name__ == '__main__':
-    N = int(input())
-    diction = {}
-    fin = []
-    for _ in range(N):
-        first, *line = map(input()).split()
-        listing = list(map(int, line))
-        diction[first] = listing
-        for key, value in diction.items():
-            if key == 'insert':
-                fin.insert(value[0], value[1])
-            if key == 'print':
-                print(fin)
-            if key == 'remove':
-                fin.remove(value[0])
-            if key == 'append':
-                fin.append(value[0])
-            if key == 'sort':
-                fin.sort()
-            if key == 'pop':
-                fin.pop()
-            if key == 'reverse':
-                fin.reverse()
+# if __name__ == '__main__':
+#     N = int(input())
+#     diction = {}
+#     fin = []
+#     for _ in range(N):
+#         first, *line = map(input()).split()
+#         listing = list(map(int, line))
+#         diction[first] = listing
+#         for key, value in diction.items():
+#             if key == 'insert':
+#                 fin.insert(value[0], value[1])
+#             if key == 'print':
+#                 print(fin)
+#             if key == 'remove':
+#                 fin.remove(value[0])
+#             if key == 'append':
+#                 fin.append(value[0])
+#             if key == 'sort':
+#                 fin.sort()
+#             if key == 'pop':
+#                 fin.pop()
+#             if key == 'reverse':
+#                 fin.reverse()
 
 
 
